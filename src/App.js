@@ -6,9 +6,9 @@ import Table from "./components/Table";
 class App extends Component {
   formatValue(property, value) {
     if (property === 'airline') {
-      return DATA.getAirlineById(value);
+      return DATA.getAirlineById(value).name;
     } else {
-      return DATA.getAirportByCode(value);
+      return DATA.getAirportByCode(value).name;
     }
   }
 
